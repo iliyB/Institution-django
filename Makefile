@@ -24,6 +24,9 @@ makemigrations:
 migrate:
 	docker-compose run --rm --no-deps app python src/manage.py migrate
 
+createsuperuser:
+	docker-compose run --rm --no-deps app python src/manage.py createsuperuser --noinput --username "$(username)" --email "$(email)"
+
 test:
 	docker-compose run --rm --no-deps app pytest -s -c src/pytest.ini
 

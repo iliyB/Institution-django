@@ -12,7 +12,7 @@ services:
       - .env
     volumes:
       - .:/src
-    command: bash -c "python src/manage.py runserver 0.0.0.0:8000"
+    command: bash -c "sleep 2 & python src/manage.py runserver 0.0.0.0:8000"
     ports:
       - ${PORT_APP}:8000
     depends_on:
