@@ -22,3 +22,5 @@ celerybeat-schedule
 celerybeat.pid
 docker/*
 _tests/*
+
+s.txt
