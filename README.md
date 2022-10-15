@@ -19,7 +19,7 @@ make migrate
 ```
 6) Создать суперпользователя с паролем из .env DJANGO_SUPERUSER_PASSWORD
 ```
-make createsuperuser --noinput --username "admin" --email "admin@mail.ru"
+make make createsuperuser username=admin email=admin@mail.ru
 ```
 
 ## Дополнительно
