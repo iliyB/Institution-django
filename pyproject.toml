@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "institution"
+version = "0.1.0"
+description = ""
+authors = ["iliyB <iliy-b@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+Django = "^4.1.2"
+djangorestframework = "^3.14.0"
+psycopg2-binary = "^2.9.4"
+PyJWT = "^2.5.0"
+django-nested-inline = "^0.4.5"
+
+[tool.poetry.dev-dependencies]
+pytest-django = "^4.5.2"
+pytest-factoryboy = "^2.5.0"
+pytest-cov = "^4.0.0"
+
+[tool.isort]
+combine_as_imports = true
+include_trailing_comma = true
+line_length = 120
+profile = "black"
+
+[tool.black]
+line-length = 120
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
